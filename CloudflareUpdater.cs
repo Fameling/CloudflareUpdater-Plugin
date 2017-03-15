@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Oxide;
-using Oxide.Plugins;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 using Oxide.Core.Libraries;
 using System.Reflection;
@@ -18,7 +12,7 @@ namespace Oxide.Plugins
     {
         Timer _timer;
 
-        float timeout = 200f;
+        const float timeout = 200f;
         Dictionary<string, string> header;
 
         Library lib;
@@ -36,16 +30,17 @@ namespace Oxide.Plugins
             }
         }
 
+        #region Oxide Hooks
+
         void Init()
         {
-            //_timer = timer.Repeat(GetConfig<int>("Seconds Between Updates"), 0, () => UpdateIPs());
-
             header = new Dictionary<string, string>()
             {
                 { "X-Auth-Email", GetConfig<string>("Login Email") },
                 { "X-Auth-Key", GetConfig<string>("API Key") }
             };
 
+            _timer = timer.Repeat(GetConfig<int>("Seconds Between Updates"), 0, () => UpdateIPs());
             UpdateIPs();
         }
 
@@ -57,7 +52,7 @@ namespace Oxide.Plugins
 
         void Unload()
         {
-            //_timer.Destroy();
+            _timer.Destroy();
         }
 
         protected override void LoadDefaultConfig()
@@ -75,6 +70,8 @@ namespace Oxide.Plugins
 
             Puts("New config file generated.");
         }
+
+        #endregion
 
         void UpdateIPs()
         {
@@ -111,6 +108,8 @@ namespace Oxide.Plugins
             if (UpdateIPTo(domainName, zoneId, recordId, newIp))
                 Puts($"Updated {domainName} successfully.");
         }
+
+        #region Web Requests
 
         void GetZoneID(string domainName)
         {
@@ -185,8 +184,14 @@ namespace Oxide.Plugins
             return (result != null && result.Contains("\"success\":true"));
         }
 
+        #endregion
+
+        #region Helpers
+
         T GetConfig<T>(string key) => (T)Config[key];
 
         bool UseProxy(string domainName) => (bool)GetConfig<Dictionary<string, object>>("Domain Names - Use Proxy")[domainName];
+
+        #endregion
     }
 }
