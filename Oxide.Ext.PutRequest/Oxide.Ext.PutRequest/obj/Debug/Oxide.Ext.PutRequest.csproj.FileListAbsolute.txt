@@ -1,0 +1,13 @@
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\Oxide.Ext.PutRequest.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\Oxide.Ext.PutRequest.pdb
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\Newtonsoft.Json.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\Oxide.Core.CSharp.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\Oxide.Core.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\websocket-sharp.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\protobuf-net.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\Mono.Cecil.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\Mono.Cecil.Rocks.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\bin\Debug\Mono.Posix.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\obj\Debug\Oxide.Ext.PutRequest.csprojResolveAssemblyReference.cache
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\obj\Debug\Oxide.Ext.PutRequest.dll
+s:\libraries\documents\visual studio 2015\Projects\Oxide.Ext.PutRequest\Oxide.Ext.PutRequest\obj\Debug\Oxide.Ext.PutRequest.pdb
